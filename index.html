@@ -1,52 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-
-min-height:100vh;
-
-/* layered background */
-
-background:
-
-/* stars */
-radial-gradient(white 1px, transparent 1px),
-radial-gradient(white 1px, transparent 1px),
-
-/* galaxy glow */
-radial-gradient(circle at 50% 40%, rgba(120,170,255,.35), transparent 60%),
-radial-gradient(circle at 70% 80%, rgba(0,200,255,.25), transparent 60%),
-
-/* base color */
-#050814;
-
-background-size:
-3px 3px,
-2px 2px,
-100% 100%,
-100% 100%,
-100% 100%;
-
-background-position:
-0 0,
-50px 50px,
-center,
-center,
-center;
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('starry_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my professional portfolio!</p>
+    </header>
+    <div class="container">
+        <section class="profile section">
+            <img src="profile_picture.jpg" alt="Profile Picture">
+            <h2>About Me</h2>
+            <p>Passionate developer with expertise in modern web technologies.</p>
+        </section>
+        <section class="skills section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+        <section class="projects section">
+            <h2>Projects</h2>
+            <p>Here are some of my projects:</p>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </section>
+        <section class="contact section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Your Name</p>
+    </footer>
 </body>
 </html>

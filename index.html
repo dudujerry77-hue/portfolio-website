@@ -1,102 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('starry_background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            animation: fadeIn 1s;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            text-align: left;
-        }
-        .section {
-            margin: 40px 0;
-        }
-        .profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-            }
-            .profile img {
-                width: 100px;
-                height: 100px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irmiya Bulus — Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
-    <header> 
-        <h1> my portfolio</h1>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my professional portfolio!</p>
-    </header>
-    <div class="container">
-        <section class="profile section">
-            <img src="git.png" alt="Profile Picture">
-            <h2>About Me</h2>
-            <p>Passionate developer with expertise in modern web technologies.</p>
-        </section>
-        <section class="skills section">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-        </section>
-        <section class="projects section">
-            <h2>Projects</h2>
-            <p>Here are some of my projects:</p>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-        </section>
-        <section class="contact section">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </section>
+
+  <!-- ── NAV ── -->
+  <nav class="navbar" id="navbar"> 
+    <div class="nav-logo">IB<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"   class="nav-link">Home</a></li>
+      <li><a href="#about"  class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#journey" class="nav-link">Journey</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="bi bi-moon-stars"></i>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow g1"></div>
+      <div class="hero-glow g2"></div>
     </div>
-    <footer>
-        <p>&copy; 2026 Your Name</p>
-    </footer>
+    <div class="hero-content">
+      <span class="hero-badge">Available for work</span>
+      <h1 class="hero-title">
+        Hi, I'm <span class="accent">Irmiya</span><br/>Bulus
+      </h1>
+      <p class="hero-sub">Frontend Developer crafting fast, responsive &amp; visually clean web experiences from Kebbi, Nigeria.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="hero-img-ring"></div>
+      <img src="pic/mypic.png" alt="Irmiya Bbulus" class="hero-img" />
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+
+      <div class="about-grid">
+        <div class="about-text card">
+          <p>I'm a self-taught frontend developer based in <strong>Kebbi, Nigeria</strong>. I specialize in building fast, responsive, and accessible web experiences with clean, intentional code.</p>
+          <p>I'm passionate about modern UI design and creating digital products that make a real impact. Currently deepening my JavaScript skills on the road to full-stack development.</p>
+          <p><span class="highlight">Current Focus:</span> Mastering CSS &amp; JavaScript to become a full-stack developer.</p>
+        </div>
+
+        <div class="quick-info card">
+          <h3>Quick Info</h3>
+          <div class="info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div><span class="info-label">Location</span><strong>Kebbi, Nigeria</strong></div>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-code-slash"></i>
+            <div><span class="info-label">Focus</span><strong>Frontend Development</strong></div>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-filetype-js"></i>
+            <div><span class="info-label">Learning</span><strong>JavaScript</strong></div>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-boxes"></i>
+            <div><span class="info-label">Target</span><strong>Full-Stack</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat card">
+          <span class="stat-num">5<span class="accent">+</span></span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat card">
+          <span class="stat-num">2<span class="accent">+</span></span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+        <div class="stat card">
+          <span class="stat-num">1000<span class="accent">+</span></span>
+          <span class="stat-label">Hours of Study</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group card">
+          <h3><i class="bi bi-braces"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Flexbox</span>
+            <span>CSS Grid</span>
+            <span>Responsive Design</span>
+            <span>CSS Animations</span>
+            <span>CSS Variables</span>
+            <span>Positioning</span>
+          </div>
+        </div>
+
+        <div class="skill-group card">
+          <h3><i class="bi bi-tools"></i> Tools</h3>
+          <div class="tools-list">
+            <div class="tool-item">
+              <img src="https://raw.githubusercontent.com/dudujerry77-hue/portfolio-website/main/vs.png" alt="VS Code" />
+              <span>VS Code</span>
+            </div>
+            <div class="tool-item">
+              <img src="https://raw.githubusercontent.com/dudujerry77-hue/portfolio-website/main/git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="tool-item">
+              <img src="https://raw.githubusercontent.com/dudujerry77-hue/portfolio-website/main/github.png" alt="github" />
+              <span>GitHub</span>
+            </div>
+            <div class="tool-item">
+              <img src="https://raw.githubusercontent.com/dudujerry77-hue/portfolio-website/main/Chrome.png" alt="chrome">
+              <span>DevTools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-desc">Personal and client projects I've worked on recently.</p>
+
+      <div class="projects-grid">
+        <div class="project-card card">
+          <div class="project-img-wrap">
+            <img src="portimg/images.jpeg" alt="Responsive Business Website" class="project-image" onerror="this.parentElement.innerHTML='<div class=\'project-image-placeholder\'><i class=\'bi bi-image\'></i><span>project image</span></div>'"/>
+            <div class="project-overlay">
+              <button onclick="alert('Coming soon!')">Live Demo <i class="bi bi-box-arrow-up-right"></i></button>
+              <button onclick="alert('Coming soon!')">Source Code <i class="bi bi-github"></i></button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Responsive Business Website</h3>
+            <p>A fully responsive company site built with clean HTML and CSS layout techniques.</p>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card card coming-soon">
+          
+          <div>
+            <img src="portimg/images.jpeg" alt="Responsive Business Website" class="project-image" onerror="this.parentElement.innerHTML='<div class=\'project-image-placeholder\'><i class=\'bi bi-collection\'></i><span class=\'cs-label\'>coming soon</span></div>'"/>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio v2</h3>
+            <p>A refined version of this portfolio with JavaScript interactions and animations.</p>
+            <div class="project-tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WORKFLOW ── -->
+  <section class="section workflow-section">
+    <div class="container">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">My Workflow</h2>
+      <p class="section-desc">How I tackle projects from start to finish.</p>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <i class="tl-icon bi bi-book"></i>
+          <div class="tl-body">
+            <h4>Research</h4>
+            <p>Understand requirements and plan project scope.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <i class="tl-icon bi bi-palette"></i>
+          <div class="tl-body">
+            <h4>Design</h4>
+            <p>Create wireframes and UI/UX structure.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <i class="tl-icon bi bi-laptop"></i>
+          <div class="tl-body">
+            <h4>Build</h4>
+            <p>Develop with HTML, CSS and JavaScript.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <i class="tl-icon bi bi-code-slash"></i>
+          <div class="tl-body">
+            <h4>Test</h4>
+            <p>Debug errors and ensure everything works.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <i class="tl-icon bi bi-rocket-takeoff"></i>
+          <div class="tl-body">
+            <h4>Deploy</h4>
+            <p>Launch and perform final checks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOURNEY ── -->
+  <section class="section journey-section" id="journey">
+    <div class="container">
+      <div class="section-label">My Story</div>
+      <h2 class="section-title">Developer Journey</h2>
+      <p class="section-desc">A timeline of my path into software development.</p>
+
+      <div class="journey-list">
+        <div class="journey-item card">
+          <div class="journey-year">2024</div>
+          <div class="journey-desc">
+            <h4>The Beginning</h4>
+            <p>Started my coding journey — learning HTML &amp; CSS from scratch with a clear goal.</p>
+          </div>
+        </div>
+        <div class="journey-item card">
+          <div class="journey-year">2025</div>
+          <div class="journey-desc">
+            <h4>First Projects</h4>
+            <p>Built first real projects and this portfolio. Started learning JavaScript.</p>
+          </div>
+        </div>
+        <div class="journey-item card">
+          <div class="journey-year">2026</div>
+          <div class="journey-desc">
+            <h4>Going Deeper</h4>
+            <p>Deepening JavaScript understanding and working toward full-stack development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">Say Hello</div>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-desc">Have a question or want to work together? Drop me a message.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:dudujerry77@gmail.com" class="contact-card card">
+          <i class="bi bi-envelope"></i>
+          <h4>Email</h4>
+          <p>dudujerry77@gmail.com</p>
+        </a>
+        <a href="tel:+2349016587710" class="contact-card card">
+          <i class="bi bi-telephone"></i>
+          <h4>Phone</h4>
+          <p>+234 9016 XXX XXX</p>
+        </a>
+        <a href="https://wa.me/2348083252950" class="contact-card card" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+          <h4>WhatsApp</h4>
+          <p>+234 8083 XXX XXX</p>
+        </a>
+        <div class="contact-card card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <h4>Location</h4>
+          <p>Kebbi, Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">IB<span class="accent">.</span></span>
+      <p>&copy; <span id="year"></span> Irmiya Bulus — Frontend Developer</p>
+      <p class="footer-note">Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

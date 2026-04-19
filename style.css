@@ -306,13 +306,13 @@ body {
 }
 
 /* image */
-.hero-img-wrap {
+.hero-img-wap {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
   animation: fadeUp .8s ease .2s both;
 }
-.hero-img-ring {
+.hero-img-ing {
   position: absolute;
   inset: -8px;
   border-radius: 50%;

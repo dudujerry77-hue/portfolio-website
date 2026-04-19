@@ -306,7 +306,7 @@ body {
 }
 
 /* image */
-.hero-img-wrap {
+.hero-img-wap {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
@@ -804,7 +804,7 @@ body {
   .stats-row { grid-template-columns: 1fr; }
   .tools-list { grid-template-columns: 1fr 1fr; }
 
-  .hero-img { width: 100px; height: 110px; }
+  .hero-img { width: 160px; height: 170px; }
   .hero-img-ring { inset: -6px; }
 
   .contact-grid { grid-template-columns: 1fr 1fr; }

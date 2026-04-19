@@ -312,14 +312,14 @@ body {
   flex-shrink: 0;
   animation: fadeUp .8s ease .2s both;
 }
-.hero-img-ring {
+.hero-img-rin {
   position: absolute;
   inset: -8px;
   border-radius: 50%;
   background: conic-gradient(var(--accent), var(--accent2), transparent, var(--accent));
   animation: spin 6s linear infinite;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spn { to { transform: rotate(360deg); } }
 
 .hero-img {
   width: clamp(180px, 25vw, 300px);

@@ -11,7 +11,7 @@ button { cursor: pointer; font-family: inherit; }
 
 /* ── TOKENS ── */
 :root {
-  --bg:       #0d0f14;
+  /* --bg:       #0d0f14; */
   --bg2:      #13161d;
   --bg3:      #1a1e28;
   --card:     #181c26;

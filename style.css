@@ -34,7 +34,8 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .light {
-  --bg:       #f0f4f8;
+  --bg: red;
+  /* --bg:       #f0f4f8; */
   --bg2:      #e4eaf2;
   --bg3:      #d8e2ee;
   --card:     #ffffff;

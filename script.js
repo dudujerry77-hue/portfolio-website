@@ -1,3 +1,4 @@
+alert("JS WORKING");
 
 // close menu on nav link click
 $$$(".nav-link").forEach(link => {

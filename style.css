@@ -569,7 +569,6 @@ gap: 30px;
 .project-image-placeholder i{
   font-size: 3rem;
 }
-/* .project-card:hover .project-img-wrap img { transform: scale(1.05); } */
 
 .project-overlay {
   position: absolute;
